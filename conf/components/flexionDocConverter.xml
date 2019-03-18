@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component xmlns="http://www.attivio.com/configuration/type/componentType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="flexionDocConverter" class="com.attivio.structureextraction.platform.transformer.ingest.ConvertToFlexionDoc" xsi:schemaLocation="http://www.attivio.com/configuration/type/componentType classpath:/xsd/type/componentType.xsd">
+  <properties>
+    <property name="converterLocation" value="${structureextraction.exe}"/>
+    <property name="libraryPath" value="${structureextraction.libpath}"/>
+    <property name="optionFilePath" value="structureextraction/structureextraction-xml-export.cfg"/>
+    <container-property name="docTypeConfig" reference="advancedDocTypeConfig"/>
+    <property name="contentPointerField" value="bytes"/>
+    <property name="sinkField" value="xmlrendition"/>
+    <property name="documentTimeout" value="${structureextraction.documentTimeout}"/>
+  </properties>
+</component>

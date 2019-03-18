@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component xmlns="http://www.attivio.com/configuration/type/componentType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="classifyDocument" class="com.attivio.classifier.transformer.ingest.document.ClassifyDocument" xsi:schemaLocation="http://www.attivio.com/configuration/type/componentType classpath:/xsd/type/componentType.xsd">
+  <properties>
+    <property name="modelName" value="${classification.defaultModelFileName}"/>
+    <map name="stopWordDictionaries">
+      <property name="en" value="classifier/dictionaries/big_stopwords_en.csv"/>
+    </map>
+    <property name="lowerCase" value="true"/>
+    <property name="output" value="${classification.outputField}"/>
+    <property name="outputScore" value="${classification.outputScoreField}"/>
+    <property name="outputMode" value="topN"/>
+    <property name="outputNum" value="1"/>
+  </properties>
+</component>

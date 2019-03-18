@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component xmlns="http://www.attivio.com/configuration/type/componentType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="metadataTitleBasedTitleExtractor-HighScore" class="com.attivio.structureextraction.platform.transformer.ingest.DetectTitleFromMetadata" xsi:schemaLocation="http://www.attivio.com/configuration/type/componentType classpath:/xsd/type/componentType.xsd">
+  <properties>
+    <property name="tokenListField" value="tokenlist"/>
+    <property name="titleField" value="title"/>
+    <property name="titleScoreField" value="title-score"/>
+    <property name="thresholdScore" value="60"/>
+    <property name="scoreToAssign" value="95"/>
+    <property name="titleBlacklistLocation" value="conf/structureextraction/structureextraction-titles-blacklist.txt"/>
+  </properties>
+</component>

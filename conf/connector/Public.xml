@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<connector xmlns="http://www.attivio.com/configuration/type/connectorType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Public" xsi:schemaLocation="http://www.attivio.com/configuration/type/connectorType classpath:/xsd/type/connectorType.xsd http://www.attivio.com/configuration/type/componentType classpath:/xsd/type/componentType.xsd">
+  <scanner class="com.attivio.webcrawler.connector.WebCrawlerScanner">
+    <properties xmlns="http://www.attivio.com/configuration/type/componentType">
+      <list name="extraArgs">
+        <entry value="-Xmx2g"/>
+      </list>
+      <list name="indexExcludePatterns"/>
+      <list name="sitemaps">
+        <entry value="https://www.discover.com/sitemap.xml"/>
+        <entry value="https://www.discover.com/personal-loans/sitemap.xml"/>
+        <entry value="https://www.discover.com/personal-loans/resources/sitemap.xml"/>
+        <entry value="https://www.discover.com/student-loans/sitemap.xml"/>
+      </list>
+      <map name="defaultCookies"/>
+      <list name="includeDomains"/>
+      <list name="indexExcludeExtensions"/>
+      <list name="uriExcludeExtensions">
+        <entry value=".jpg"/>
+        <entry value=".jpeg"/>
+        <entry value=".ico"/>
+        <entry value=".tif"/>
+        <entry value=".png"/>
+        <entry value=".bmp"/>
+        <entry value=".gif"/>
+        <entry value=".wmf"/>
+        <entry value=".avi"/>
+        <entry value=".mpg"/>
+        <entry value=".wmv"/>
+        <entry value=".wma"/>
+        <entry value=".ram"/>
+        <entry value=".asx"/>
+        <entry value=".asf"/>
+        <entry value=".mp3"/>
+        <entry value=".mp4"/>
+        <entry value=".wav"/>
+        <entry value=".ogg"/>
+        <entry value=".vmarc"/>
+        <entry value=".tar"/>
+        <entry value=".iso"/>
+        <entry value=".img"/>
+        <entry value=".rpm"/>
+        <entry value=".cab"/>
+        <entry value=".rar"/>
+        <entry value="ace"/>
+        <entry value=".exe"/>
+        <entry value=".java"/>
+        <entry value=".jar"/>
+        <entry value=".prz"/>
+        <entry value=".wrl"/>
+        <entry value=".midr"/>
+        <entry value=".ps"/>
+        <entry value=".ttf"/>
+        <entry value=".mso"/>
+        <entry value=".class"/>
+        <entry value=".dll"/>
+        <entry value=".so"/>
+        <entry value=".bin"/>
+        <entry value=".biz"/>
+        <entry value=".cgi"/>
+        <entry value=".com"/>
+        <entry value="dcr"/>
+        <entry value=".fb"/>
+        <entry value=".flv"/>
+        <entry value=".fm"/>
+        <entry value=".ics"/>
+        <entry value=".mov"/>
+        <entry value=".svg"/>
+        <entry value=".css"/>
+        <entry value=".swf"/>
+        <entry value=".js"/>
+        <entry value=".min"/>
+        <entry value=".zip"/>
+        <entry value=".tar"/>
+        <entry value=".tar.gz"/>
+        <entry value=".ova"/>
+      </list>
+      <list name="seeds">
+        <entry value="discoverbank.com/ "/>
+        <entry value="www.discoverfinancial.com"/>
+        <entry value="dbblog.discover.com"/>
+        <entry value="https://www.discover.com/personal-loans/assets/DPLPrivacystatement_SPANISH.pdf "/>
+        <entry value="https://www.discover.com/personal-loans/assets/VersionE_TCs_SPANISH_1849.pdf "/>
+        <entry value="https://www.discover.com/personal-loans/assets/VersionA_TCs_SPANISH_1899.pdf "/>
+        <entry value="https://www.discover.com/personal-loans/assets/VersionE_TCs_SPANISH_2449.pdf "/>
+        <entry value="https://www.discover.com/personal-loans/assets/VersionA_TCs_SPANISH_2499.pdf "/>
+        <entry value="https://www.discover.com/personal-loans/assets/VersionB_TCs_SPANISH_2999.pdf"/>
+        <entry value="https://www.discover.com/personal-loans/assets/WelcomeKit_SPANISH.pdf "/>
+        <entry value="https://www.discover.com/"/>
+      </list>
+      <list name="indexMimeTypes">
+        <entry value="text/xml"/>
+        <entry value="text/html"/>
+        <entry value="text/plain"/>
+        <entry value="application/pdf"/>
+        <entry value="application/xhtml+xml"/>
+        <entry value="text/aspdotnet"/>
+        <entry value="text/x-jsp"/>
+      </list>
+      <map name="docIdRewriteRules"/>
+      <list name="uriExcludePatterns">
+        <entry value="card.discover.com/cardmembersvcs/"/>
+        <entry value="/css/"/>
+        <entry value="portal.discover.com"/>
+        <entry value="card.discover.com/"/>
+        <entry value="/checking-hrtlp-lng-01/"/>
+        <entry value="/checking-lp-lng-01/"/>
+        <entry value="/savings-lng-01/"/>
+        <entry value="/savings-lng-02/"/>
+        <entry value="/savings-lng-03/"/>
+        <entry value="/savings-lng-04/"/>
+        <entry value="/savings-lng-05/"/>
+        <entry value="/cd-lng-01/"/>
+        <entry value="/cd-lng-02/"/>
+        <entry value="/site-map.xml"/>
+        <entry value="/site-map.html"/>
+        <entry value="/terms-of-use.html"/>
+        <entry value="bank.discover.com"/>
+        <entry value="/amp/"/>
+        <entry value="https://www.discoverpersonalloans.com/"/>
+        <entry value="/rates-calculators/"/>
+        <entry value="https://discoverstudentloans.com"/>
+        <entry value="https://homeequityloans.discover.com/  "/>
+        <entry value="/RLP-he-ps/ "/>
+        <entry value="/get-a-quote/ "/>
+        <entry value="/terms-of-use/"/>
+        <entry value="/disclosures/"/>
+        <entry value="/RLP-he-public/\?sc\=H499"/>
+        <entry value="/assets/account_center_user_guide.pdf"/>
+        <entry value="amp"/>
+        <entry value="http://"/>
+        <entry value="/?p="/>
+        <entry value="/subscribe/"/>
+        <entry value="https://www.discover.com/home-equity-loans/"/>
+        <entry value="/default.aspx\?print\=1\?print=*"/>
+      </list>
+      <map name="SAMLAuthParams"/>
+      <list name="uriIncludePatterns"/>
+      <map name="formAuthParams"/>
+      <property name="crawlDepth" value="5"/>
+      <list name="javascriptMimeTypes">
+        <entry value="text/html"/>
+        <entry value="application/xhtml+xml"/>
+        <entry value="text/aspdotnet"/>
+        <entry value="text/asp"/>
+        <entry value="text/php"/>
+        <entry value="text/x-php"/>
+        <entry value="application/php"/>
+        <entry value="application/x-php"/>
+        <entry value="text/x-jsp"/>
+        <entry value="application/pdf"/>
+        <entry value="text/pdf"/>
+      </list>
+      <property name="defaultFetchInterval" value="604800"/>
+      <property name="executeJavascript" value="true"/>
+    </properties>
+  </scanner>
+  <feeder class="com.attivio.connector.DirectMessagePublisher">
+    <properties xmlns="http://www.attivio.com/configuration/type/componentType">
+      <map name="sizeToDomain"/>
+      <map name="staticFields">
+        <property name="table" value="Public"/>
+      </map>
+      <property name="ingestWorkflowName" value="canonfileIngest"/>
+      <list name="documentStoreFilterFields">
+        <entry value="table"/>
+      </list>
+    </properties>
+  </feeder>
+</connector>

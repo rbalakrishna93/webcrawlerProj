@@ -1,0 +1,12 @@
+610110112 conf/properties/structureextraction/structureextraction.properties
+2354553800 conf/properties/classifier/attivio.classification.properties
+1163939404 conf/properties/advancedtextextraction/advancedtextextraction.properties
+1187014108 conf/properties/entityextraction/entityextraction.properties
+2910082306 conf/properties/alm/alm.properties
+0 conf/environments/default/environment.properties
+3319004612 conf/properties/sonar/sonar.properties
+2094851952 conf/properties/memory/memory.properties
+279055794 conf/properties/core-app/attivio.core-app.properties
+577676353 conf/properties/entitysentiment/attivio.entitysentiment.properties
+2622201287 conf/properties/factbook/factbook.properties
+3552562081 conf/properties/triggers/triggers.properties

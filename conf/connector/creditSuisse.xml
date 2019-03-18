@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<connector xmlns="http://www.attivio.com/configuration/type/connectorType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="creditSuisse" xsi:schemaLocation="http://www.attivio.com/configuration/type/connectorType classpath:/xsd/type/connectorType.xsd http://www.attivio.com/configuration/type/componentType classpath:/xsd/type/componentType.xsd">
+  <scanner class="com.attivio.webcrawler.connector.WebCrawlerScanner">
+    <properties xmlns="http://www.attivio.com/configuration/type/componentType">
+      <list name="extraArgs"/>
+      <list name="indexExcludePatterns"/>
+      <list name="duplicateRegex"/>
+      <list name="sitemaps">
+        <entry value="https://www.credit-suisse.com/us/en.sitemap.xml"/>
+      </list>
+      <map name="defaultCookies"/>
+      <list name="includeDomains"/>
+      <list name="javascriptMimeTypes">
+        <entry value="text/html"/>
+      </list>
+      <map name="javascriptAuthFormParams"/>
+      <list name="indexExcludeExtensions"/>
+      <map name="defaultHeaders"/>
+      <list name="uriExcludeExtensions">
+        <entry value=".jpg"/>
+        <entry value=".jpeg"/>
+        <entry value=".ico"/>
+        <entry value=".tif"/>
+        <entry value=".png"/>
+        <entry value=".bmp"/>
+        <entry value=".gif"/>
+        <entry value=".wmf"/>
+        <entry value=".avi"/>
+        <entry value=".mpg"/>
+        <entry value=".wmv"/>
+        <entry value=".wma"/>
+        <entry value=".ram"/>
+        <entry value=".asx"/>
+        <entry value=".asf"/>
+        <entry value=".mp3"/>
+        <entry value=".mp4"/>
+        <entry value=".wav"/>
+        <entry value=".ogg"/>
+        <entry value=".vmarc"/>
+        <entry value=".tar"/>
+        <entry value=".iso"/>
+        <entry value=".img"/>
+        <entry value=".rpm"/>
+        <entry value=".cab"/>
+        <entry value=".rar"/>
+        <entry value="ace"/>
+        <entry value=".exe"/>
+        <entry value=".java"/>
+        <entry value=".jar"/>
+        <entry value=".prz"/>
+        <entry value=".wrl"/>
+        <entry value=".midr"/>
+        <entry value=".ps"/>
+        <entry value=".ttf"/>
+        <entry value=".mso"/>
+        <entry value=".class"/>
+        <entry value=".dll"/>
+        <entry value=".so"/>
+        <entry value=".bin"/>
+        <entry value=".biz"/>
+        <entry value=".cgi"/>
+        <entry value=".com"/>
+        <entry value="dcr"/>
+        <entry value=".fb"/>
+        <entry value=".flv"/>
+        <entry value=".fm"/>
+        <entry value=".ics"/>
+        <entry value=".mov"/>
+        <entry value=".svg"/>
+        <entry value=".css"/>
+        <entry value=".swf"/>
+        <entry value=".js"/>
+        <entry value=".min"/>
+        <entry value=".zip"/>
+        <entry value=".tar"/>
+        <entry value=".tar.gz"/>
+        <entry value=".ova"/>
+      </list>
+      <list name="seeds">
+        <entry value="https://www.credit-suisse.com/us/en.html"/>
+      </list>
+      <list name="indexMimeTypes">
+        <entry value="text/plain"/>
+        <entry value="application/pdf"/>
+        <entry value="text/xml"/>
+        <entry value="text/html"/>
+        <entry value="application/xhtml+xml"/>
+        <entry value="application/xml"/>
+      </list>
+      <map name="docIdRewriteRules"/>
+      <list name="uriExcludePatterns"/>
+      <map name="SAMLAuthParams"/>
+      <list name="uriIncludePatterns"/>
+      <map name="formAuthParams"/>
+      <property name="crawlDepth" value="-1"/>
+    </properties>
+  </scanner>
+  <feeder class="com.attivio.connector.DirectMessagePublisher">
+    <properties xmlns="http://www.attivio.com/configuration/type/componentType">
+      <map name="sizeToDomain"/>
+      <map name="staticFields">
+        <property name="table" value="credit"/>
+      </map>
+      <property name="ingestWorkflowName" value="fileIngest"/>
+      <list name="documentStoreFilterFields">
+        <entry value="table"/>
+      </list>
+    </properties>
+  </feeder>
+</connector>

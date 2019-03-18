@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component xmlns="http://www.attivio.com/configuration/type/componentType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="splitEmailDocuments" class="com.attivio.platform.transformer.ingest.routing.SplitDocumentListByFieldValue" xsi:schemaLocation="http://www.attivio.com/configuration/type/componentType classpath:/xsd/type/componentType.xsd">
+  <properties>
+    <property name="input" value="doccontentkind"/>
+    <workflowQueueMap name="workflowMap">
+      <if value="em.doc" workflow="metadataFirstTitleExtraction" routeImmediately="true"/>
+      <else workflow="headingsFirstTitleExtraction" routeImmediately="true"/>
+    </workflowQueueMap>
+  </properties>
+</component>
